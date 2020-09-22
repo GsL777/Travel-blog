@@ -1,0 +1,74 @@
+/*
+	@package Travel-blog-theme
+*/
+
+#wpcontentid {
+	font-family: 'Raleway', Arial, Verdana, sans-serif;
+	font-weight: 300;
+}
+
+h1, h2, h3, h4, h5,
+.form-table th,
+.form-wrap label{
+	font-weight: 500;
+}
+
+.design-general-form,
+.design-sidebar-preview{
+	display: inline-block;
+	float: left;
+}
+
+.design-sidebar-preview{
+	width: 280px;
+	background-color: #1F1F1F;
+	padding: 20px;
+	text-align: center;
+	margin-right: 20px;
+}
+
+.design-sidebar{
+	display: block;
+	text-align: center;
+}
+
+h1.design-username,
+h2.design-description{
+	font-weight: 100;
+	color: #fff;
+}
+
+h1.design-username {
+	font-size: 24px;
+	margin: 0 0 10px;
+}
+
+h2.design-description {
+	font-size: 13px;
+	margin: 0 0 20px;
+}
+
+
+.design-icon-button:before {
+	margin: 4px 3px 0 -3px;
+} /*sudo element styling function-admin.php function design_sidebar_profile()*/
+
+
+.image-container {
+	display: block;
+	width: 100%;
+	overflow: hidden;
+	text-align: center;
+}
+
+.profile-picture {
+	width: 125px;
+	height: 125px;
+	overflow: hidden;
+	border-radius: 50%;
+	margin: 20px auto;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+

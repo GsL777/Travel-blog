@@ -1,0 +1,173 @@
+/*
+	=============================
+		BLOG CONTENT
+	=============================
+*/
+
+
+/*gallery image for index.php START*/
+.blog-content{
+	.gallery-content{
+		margin: 1em;
+	}
+}
+
+.content-home{
+	.gallery-style{
+		padding: 1em 0;
+		max-width: 100%;
+	}
+}
+/*gallery image for index.php END*/
+
+.blog-content {
+	.style {
+		padding: 2em 1em;
+		.images {
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center center;
+			height: 40vh;
+			width: 100%;
+			@include flexbox();
+			@extend %flex-direction-column;
+			@extend %justify-content-center;
+			@extend %align-items-center;
+			margin-bottom: 20px;
+		}
+	}
+}
+
+.info {
+	@include flexbox();
+	@extend %flex-direction-row;	
+	position: absolute;
+	top: 18em;
+	margin: 0;
+	padding: .6em 0;
+	background-color: $SealBrown;
+	list-style: none;
+	li {
+		margin: 0 10px;
+		a {
+			@include animate(all, .35s);
+			&:hover {
+				text-decoration: none;
+				color: $HDOrange;
+			}
+		}
+		.calendar {
+			color: $VLightGrey;
+		}
+	}
+}
+
+.wrapper {
+	.button-style {
+		display: block;
+		width: 200px;
+		height: 40px;
+		line-height: 40px;
+		font-size: 18px;
+		font-family: sans-serif;
+		text-decoration: none;
+		color: $Grey20;
+		border: 2px solid $Grey20;
+		letter-spacing: 2px;
+		text-align: center;
+		position: relative;
+		@include animate(all, .35s);
+		span {
+			position: relative;
+			z-index: 2;
+		}
+		&:after {
+			position: absolute;
+			content: "";
+			top: 0;
+			left: 0;
+			width: 0;
+			height: 100%;
+			background-color: $HDOrange;
+			@include animate(all, .35s);
+		}	
+		&:hover {
+			color: $white;
+		}
+	}
+}
+
+.wrapper {
+	.button-style {
+		&:hover {
+			&:after {
+				width: 100%;
+			}
+		}
+	}	
+}
+
+.pagination-item {
+	padding: 1em 0 0 0;
+	.page-numbers {
+		border: 1px $VLightGrey solid;
+		padding: 1em;
+		margin: 10px;
+		@include animate(all, .35s);
+		&:hover {
+			text-decoration: none;
+			background-color: $HDOrange;
+			color: $VLightGrey;
+		}
+	}
+/*	.page-item {
+		.page-link {
+			background-color: $SealBrown;
+			color: $VLightGrey;
+		}
+		&:nth-child(1){
+			padding-right: 1em;
+		}
+		&:last-child{
+			padding-left: 1em;
+		}
+	}*/
+}
+
+
+
+/* AJAX LOADING START */
+
+.btn-travel-load {
+	display: block;
+	width: 200px;
+	font-size: 30px;
+	margin: 0 auto;
+	cursor: pointer;
+	opacity: .5;
+	@include animate(opacity, 320ms);
+		&:hover,
+		&:focus,
+		&.loading { /*if the .btn-travel-load button has the class .loading applied, it will use the code {} */
+			opacity: 1;
+		}
+		&.loading {
+			cursor: default;
+		}
+	span {
+		display: block;
+		color: $white;
+	}
+	.dashicons {
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+.spin { /*spin animation from variables.scss*/
+	animation-name: spin;
+	animation-duration: 1000ms;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+/* AJAX LOADING END */

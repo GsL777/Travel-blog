@@ -1,0 +1,165 @@
+/*
+	=============================
+		CONTACT CONTENT
+	=============================
+*/
+
+.contact{
+	.section1 {
+		text-align: center;
+		display: table;
+		width: 100%;	
+		h1 {
+			font-size: 40px;
+			color: $HDOrange; /*#A44DD8*/
+			font-weight: normal;
+		}
+	}
+	.section2 {
+		width: 1200px;
+		margin: 25px auto;	
+		.contact-section {
+			position: relative;
+			top: 20px;
+			right: 0;
+			left: 0;
+			margin-left: -75px;
+			z-index: 99;
+			width: auto;
+			bottom: 0;
+			padding: 15px;
+			background-color: $white;
+		}
+		.map {
+			iframe{
+				width: 100%;
+				height: 105vh;
+				max-height: 1000px;			
+			}
+		}
+		span.contacts {
+			color: #a2a2a2;
+			margin-right: 10px;
+			display: inline-block;
+		}
+
+		.address {
+			display: block;
+			line-height: 26px;
+			p:first-child {
+				margin-bottom: 10px;
+			}
+		}
+
+		.contact-form {
+			input {
+				&[type="text"], &[type="email"] {
+					padding: 18px;
+					border: 0;
+					background: #EDEDED;
+					margin: 7px 0;
+				}
+			}
+			textarea {
+				padding: 18px;
+				border: 0;
+				background: #EDEDED;
+				margin: 7px 0;
+				width: 100%;
+				display: block;
+				color: #665;
+				resize: none;
+			}
+			input[type="submit"] {
+				padding: 15px 40px;
+				color: $white;
+				border: 0;
+				background: $HDOrange;
+				font-size: 16px;
+				text-transform: uppercase;
+				margin: 7px 0;
+				cursor: pointer;
+			}
+			h3 {
+				font-weight: normal;
+				margin: 20px 0;
+				margin-top: 30px;
+				border-bottom: 1px solid #ddd;
+				padding-bottom: 19px;
+				color: $HDOrange;
+			}
+			.placeholder{
+				width:100%;
+			}
+			.form-title{
+				color: $HDOrange;
+			}
+		}
+	}
+
+
+	/* @media querries */
+	@media only screen and (max-width: $xs) {
+		.section1 h1 {
+			font-size: 28px;
+		}
+	}
+
+	@media only screen and (max-width: $sm) {
+		.section2 {
+			.contact-section {
+				margin: 1em;
+				max-width: 510px;
+			}
+			.address {
+				font-size: 14px;
+			}
+			.contact-form {
+				h3 {
+					font-size: 16px;
+				}
+				input {
+					&[type="text"], &[type="email"] {
+						padding: 10px;
+						margin: 3px 0;
+					}
+				}
+				textarea {
+					padding: 10px;
+					margin: 3px 0;
+				}
+				input[type="submit"] {
+					padding: 10px 30px;
+					font-size: 14px;
+				}
+			}
+		}
+	}
+
+	@media only screen and (max-width: $lg) {
+		.section2 {
+			width: 100%;
+		}
+	}
+}
+
+
+/* Contact form js START */
+.form-row {
+	margin: 0;
+}
+.form-control-msg {
+	display: none;
+}
+.has-error {
+	.form-control-msg {
+		display: block;
+	}
+	.form-control {
+		border-color: #ff0000;
+	}
+}
+.js-show-feedback {
+	display: block;
+}
+/* Contact form js END */

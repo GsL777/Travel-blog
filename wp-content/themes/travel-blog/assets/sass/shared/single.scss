@@ -1,0 +1,55 @@
+/*
+	=============================
+		SINGLE
+	=============================
+*/
+
+.image-grid{
+	padding: 0;
+	.images {
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		height: 35vh;
+		width: 100%;
+		@include flexbox();
+		@extend %flex-direction-column;
+		@extend %justify-content-center;
+		@extend %align-items-center;
+	}
+}
+
+
+.single{
+	.logged-in-as{
+		display:none;
+	}
+	a{
+		@include animate(all, .6s);
+		&:hover{
+			color: $HDOrange;
+		}
+	}
+	.content {
+		min-height: 130px;
+	}
+	.navigation {
+		color: $VLightGrey;
+	}
+}
+
+
+.comments-area {
+	margin-top: 2em;
+	label {
+		color: $VLightGrey;
+	}
+	.form-submit{
+		input{
+			@include animate(all, .6s);
+			&:hover{
+				background-color: $HDOrange;
+			}
+		}
+	}
+}

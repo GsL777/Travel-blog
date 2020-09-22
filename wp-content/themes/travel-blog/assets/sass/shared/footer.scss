@@ -1,0 +1,103 @@
+/*
+	=============================
+		FOOTER
+	=============================
+*/
+
+.footer {
+	.content {
+		margin: 1.5rem auto;
+	}
+
+	.links {
+		margin: 1.5rem auto;
+		.list-unstyled {
+			a {
+				@include animate(all, .35s);
+				text-transform: capitalize;
+				&:hover {
+					text-decoration: none;
+					color: $HDOrange;
+				}
+			}
+		}
+	}
+	.address {
+		margin: 1.5rem auto;
+	}
+}
+
+.socials {
+	display: flex;
+	flex-direction: column;
+	margin: 1.5rem auto;
+	i {
+		color: $white;
+	}
+}
+
+.icon-link {
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	vertical-align: middle;
+	display: inline-block;
+	cursor: pointer;
+	outline: none;
+	margin: 5px;
+	box-sizing: content-box;
+}
+
+.icon-link.fill.facebook {
+	background-color: $Mariner;
+	&:hover {
+		background-color: $white;
+		.fa-facebook {
+			color: $Mariner;
+			-webkit-transition: color 150ms ease-in-out;
+			transition: color 150ms ease-in-out;
+		}
+	}
+}
+.icon-link.fill.linkedin {
+	background-color: $Cerulean;
+	&:hover {
+		background-color: $white;
+		.fa-linkedin {
+			color: $Cerulean;
+			-webkit-transition: color 150ms ease-in-out;
+			transition: color 150ms ease-in-out;
+		}
+	}
+}
+.icon-link.fill.twitter {
+	background-color: $DeepSkyBlue;
+	&:hover {
+		background-color: $white;
+		.fa-twitter {
+			color: $DeepSkyBlue;
+			-webkit-transition: color 150ms ease-in-out;
+			transition: color 150ms ease-in-out;
+		}
+	}
+}
+.icon-link.fill.github {
+	background-color: $Tundora;
+	&:hover {
+		background-color: $white;
+		.fa-github {
+			color: $Tundora;
+			-webkit-transition: color 150ms ease-in-out;
+			transition: color 150ms ease-in-out;
+		}
+	}
+}
+
+.icon-link.round {
+	border-radius: 50%;
+}
+
+.footer-copyright {
+	color: $white;
+}

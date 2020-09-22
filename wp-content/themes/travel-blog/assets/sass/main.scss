@@ -1,0 +1,37 @@
+// project variables
+@import 'variables';
+
+// global styles
+@import 'global';
+
+// shared components
+@import 'shared/header';
+@import 'shared/navbar';
+@import 'shared/sidebar';
+@import 'shared/footer';
+@import 'shared/single';
+@import 'shared/archive';
+
+// page specific styles
+@import 'pages/index';
+@import 'pages/about';
+@import 'pages/gallery';
+@import 'pages/contact';
+
+
+// other styles
+html,
+body {
+	background-color: $SealBrown;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Abel;
+	letter-spacing: 1px;
+	perspective: 1px;
+	transform-style: preserve-3d;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}

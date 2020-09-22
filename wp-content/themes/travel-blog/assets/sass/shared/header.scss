@@ -1,0 +1,44 @@
+/*
+	=============================
+		HEADER
+	=============================
+*/
+
+.page-header {
+	padding-bottom: 1em;
+	.page-title{
+		h2{
+			text-transform: uppercase;
+			position: relative;
+			bottom: 80px;
+			font-weight: bolder;
+		}		
+	}
+	.images {
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		height: 70vh; /*margin-bottom: 50px;*/
+		width: 100%;
+		@include flexbox();
+		@extend %flex-direction-column;
+		@extend %justify-content-center;
+		@extend %align-items-center;
+	}
+	.title-back {
+		position: relative;
+		font-size: 54px;
+		left: 115px;
+		top: 15%;
+		z-index: 1;
+	}
+	h3 {
+		text-align: center;
+		text-transform: uppercase;
+		letter-spacing: 5px;
+		font-size: 42px;	
+		color: $SealBrown;
+		text-transform: capitalize;
+		z-index: 2;
+	}
+}

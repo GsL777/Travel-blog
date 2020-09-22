@@ -1,0 +1,49 @@
+/*
+	=============================
+		ARCHIVE
+	=============================
+*/
+
+
+.archive-main {
+	width: 100%;
+	.gallery-style {
+		padding: 1em 0;
+		max-width: 100%;
+	}
+	.style {
+		padding: 1em 0;
+		.info {
+			top: 322px;
+		}		
+	}
+
+}
+
+
+.archive {	
+	.entry-title{
+		a{
+			@include animate(all, .6s);
+			&:hover{
+				text-decoration: none;
+				color: $HDOrange;
+			}
+		}
+	}
+	small{
+		color: $VLightGrey;
+		.post-categories{
+			padding: 0;
+			list-style-type: none;
+			a{
+				@include animate(all, .6s);
+				&:hover{
+					text-decoration: none;
+					color: $HDOrange;
+				}
+			}
+		}
+	}
+}
+

@@ -1,0 +1,93 @@
+//Colours
+
+$white: #fff; /*white*/
+$SealBrown: #1a1515; /*SealBrown*/
+$HDOrange: #bd002c; /*Harley Davidson Orange*/
+$VLightGrey: #cbc6c6; /*Very Light Grey*/
+$Grey20: #333; /*Grey20*/
+$Mariner: #3b5998; /*Mariner*/
+$Cerulean: #007bb6; /*Cerulean*/
+$DeepSkyBlue: #00aced; /*Deep Sky Blue*/
+$Tundora: #444; /*Tundora*/
+
+//Placeholder
+@mixin flexbox() {
+	display: flex;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+}
+
+%flex-direction-column {
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+}
+
+%justify-content-center {
+	-webkit-justify-content: center;
+	justify-content: center;	
+}
+
+%align-items-center {
+	 -webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+%flex-direction-row {
+	-webkit-flex-direction: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
+}
+
+%flex-flow-row-wrap {
+	-webkit-flex-flow: row wrap;
+	-ms-flex-flow: row wrap;
+	flex-flow: row wrap;	
+}
+
+%justify-content-space-around {
+	-webkit-justify-content: space-around;
+	justify-content: space-around;
+}
+
+%justify-content-space-between {
+	-webkit-justify-content: space-between;
+	justify-content: space-between;	
+}
+
+@mixin animate ($attr, $time){
+	-webkit-transition: $attr $time ease-in-out;
+	-moz-transition: $attr $time ease-in-out;
+	-ms-transition: $attr $time ease-in-out;
+	-o-transition: $attr $time ease-in-out;
+	transition: $attr $time ease-in-out;
+}
+
+@mixin transform( $val) {
+    -webkit-transform: $val;
+    -moz-transform: $val;
+    -ms-transform: $val;
+    -o-transform: $val;
+    transform: $val;
+}
+
+@keyframes spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(-360deg);
+	}
+}
+
+//Media Queries
+$xs: 575px; /*Extra small devices (portrait phones, less than 576px)*/
+
+$sm: 767px; /* Small devices (landscape phones, less than 768px)*/
+
+$md: 991px; /* Medium devices (tablets, less than 992px)*/
+
+$lg: 1199px; /* Large devices (desktops, less than 1200px)*/
